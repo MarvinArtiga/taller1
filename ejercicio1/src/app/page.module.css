@@ -1,0 +1,141 @@
+/* page.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex; /* Para alinear los elementos en fila */
+  justify-content: space-between; /* Para distribuir el espacio entre los elementos */
+}
+
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.form {
+  margin-bottom: 20px;
+  width: 35%; /* Ancho del formulario */
+}
+
+.formGroup {
+  margin-bottom: 10px;
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #ff0000;
+}
+
+.button2 {
+  background-color: #00e71f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.button2:hover {
+  background-color: #1bb2d8;
+}
+
+
+/* Estilo para cada celda de proyecto */
+.project_cell {
+  border: 1px solid #e6ff01;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  background-color: #ff0000; /* Color de fondo */
+}
+
+/* Estilo para el nombre del proyecto */
+
+.project_h3{
+  background-color: #ffffff;
+  color: #0f6903;
+}
+
+.project_p{
+  background-color: #007bff;
+}
+
+.project_nombre {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff; /* Color del texto */
+  background-color: #000000;
+}
+
+/* Estilo para la categoría */
+.project_categoria {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* Estilo para la descripción */
+.project_descripcion {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+
+/* Estilo para la inversión */
+.project_inversion {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Estilo para la fecha */
+.project_fecha {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.total {
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: rgb(218, 27, 192);
+  border-radius: 5px;
+}
